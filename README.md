@@ -31,7 +31,7 @@ Here're some of the project's best features:
     Product Class:
     <ol>
       <li>
-        Designed with error handling using try-catch blocks and filtering
+        Designed with filtering
         mechanisms to ensure data integrity.
       </li>
     </ol>

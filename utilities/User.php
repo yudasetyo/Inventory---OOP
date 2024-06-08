@@ -22,7 +22,7 @@
         }
 
         public function validatePassword($password) {
-            return preg_match('/^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/',  $password);
+            return preg_match('/^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])[A-Za-z\d]{8,}$/',  $password);
         }
 
         public function register() {
@@ -36,7 +36,7 @@
                 }
 
                 if (!$this->validatePassword($this->password)) {
-                    throw new Exception("Password must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, one digit, and one special character");
+                    throw new Exception("Password must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, and one digit");
                 }
 
                 $query = "INSERT INTO " . $this->table_name . " (name, email, password) VALUES (:name, :email, :password)";

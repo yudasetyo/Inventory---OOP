@@ -3,7 +3,7 @@
     require_once '../utilities/Database.php';
     require_once '../utilities/User.php';
 
-    if ($_POST) {
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         try {
             $database = new Database();
             $db = $database->getConnection();

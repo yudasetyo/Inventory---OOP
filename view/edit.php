@@ -7,7 +7,7 @@
     $db = $database->getConnection();
     $product = new Product($db);
 
-    $product->id = isset($_GET['id']) ? $_GET['id'] : die('Eroor: missing ID.');
+    $product->id = isset($_GET['id']) ? $_GET['id'] : die('Error: missing ID.');
     $stmt = $product->readOne();
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
 ?>

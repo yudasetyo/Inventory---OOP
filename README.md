@@ -3,7 +3,7 @@
 <p id="description">
   This Inventory Management System is a simple PHP OOP application built for
   training purposes. It includes user authentication with various methods such
-  as try-catch blocks sanitization regex filtering and trimming. The core of the
+  as try-catch blocks, sanitization, regex, filtering, and trimming. The core of the
   application revolves around the Product class which is designed with error
   handling using try-catch blocks and filtering mechanisms. The application
   utilizes PDO as the database driver for secure and efficient database
